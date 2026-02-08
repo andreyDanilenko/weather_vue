@@ -61,14 +61,8 @@ export async function fetchCitySuggestions(q: string, limit = 5): Promise<GeoLoc
   }))
 }
 
-export async function fetchCoordsByCity(q: string): Promise<GeoLocationItem | null> {
-  const list = await fetchCitySuggestions(q, 1)
-  const first = list[0]
-  return first ?? null
-}
-
 export async function fetchWeatherByCity(q: string): Promise<OpenWeatherResponse> {
-  const coords = await fetchCoordsByCity(q)
+  const [coords] = await fetchCitySuggestions(q.trim(), 1)
   if (!coords) {
     const err = new Error('Город не найден') as Error & { response?: { status: number } }
     err.response = { status: 404 }

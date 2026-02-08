@@ -25,9 +25,6 @@ export function useGeolocation() {
 
       navigator.geolocation.getCurrentPosition(
         (pos) => {
-
-          console.log(pos.coords.latitude,pos.coords.longitude);
-          
           position.value = { lat: pos.coords.latitude, lon: pos.coords.longitude }
           loading.value = false
           resolve(position.value)
