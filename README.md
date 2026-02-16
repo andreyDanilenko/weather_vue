@@ -1,4 +1,4 @@
-# test_vue — погода (OpenWeatherMap)
+# test_vue — погода (OpenWeatherMap) [EN](https://ephemeral-gumdrop-74504d.netlify.app/)
 
 [DEMO](https://ephemeral-gumdrop-74504d.netlify.app/)
 
