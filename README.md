@@ -1,5 +1,7 @@
 # test_vue — погода (OpenWeatherMap)
 
+[DEMO](https://ephemeral-gumdrop-74504d.netlify.app/)
+
 Тестовое приложение: Vue 3 (Composition API), TypeScript, Vite, Axios, Element Plus, OpenWeatherMap API.
 
 ## Требования
